@@ -1,6 +1,12 @@
-#include <stdio.h>
+#include <stdio.h
 
-/* entry point for c file */
+/**
+ * main - starting point
+ * @void: void is the parameter
+ *
+ * Description: entry point of c file
+ * Return: the number 0
+ */
 int main(void)
 {
 	char myStr[] = "\"Programming is like building a multilingual puzzle";
