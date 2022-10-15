@@ -11,7 +11,7 @@ int main(void)
 {
 	char ch;
 
-	for (ch = 97; ch <= 121; ch++)
+	for (ch = 97; ch <= 122; ch++)
 	{
 		putchar(ch);
 	}
@@ -19,6 +19,7 @@ int main(void)
 	{
 		putchar(ch);
 	}
+
 	putchar('\n');
 	return (0);
 }
