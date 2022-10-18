@@ -11,18 +11,11 @@ int _islower(int c)
 {
 	char str[] = "abcdefghijklmnopqrstuvwxyz";
 	int i;
-	int val;
-
+	
 	for (i = 0; i < 26; i++)
 	{
 		if (c == str[i])
-		{
-			val = 1;
-		}
-		else
-		{
-			val = 0;
-		}
+			return (1);
 	}
-	return (val);
+	return (0);
 }
