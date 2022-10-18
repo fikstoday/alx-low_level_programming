@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * islower - entry for function
+ * _islower - entry for function
  * @c: parameter is int c
  *
  * Description: return umber 1 if c is lowercase
@@ -11,15 +11,18 @@ int _islower(int c)
 {
 	char str[] = "abcdefghijklmnopqrstuvwxyz";
 	int i;
+	int val;
 
 	for (i = 0; i < 26; i++)
 	{
-		if( c == str[i])
+		if (c == str[i])
 		{
-			return (1);
-		}else
+			val = 1;
+		}
+		else
 		{
-			return (0);
+			val = 0;
 		}
 	}
+	return (val);
 }
