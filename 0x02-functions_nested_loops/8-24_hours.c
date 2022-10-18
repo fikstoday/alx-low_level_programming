@@ -7,7 +7,7 @@
  * Description: print time countdown in 24 hour format
  * Return: returns 0
  */
-int jack_bauer(void)
+void jack_bauer(void)
 {
 	int top, next;
 
@@ -40,5 +40,4 @@ int jack_bauer(void)
 		}
 		_putchar('\n');
 	}
-	return (0);
 }
