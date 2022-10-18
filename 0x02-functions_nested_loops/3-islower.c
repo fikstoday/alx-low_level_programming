@@ -11,7 +11,7 @@ int _islower(int c)
 {
 	char str[] = "abcdefghijklmnopqrstuvwxyz";
 	int i;
-	
+
 	for (i = 0; i < 26; i++)
 	{
 		if (c == str[i])
