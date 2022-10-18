@@ -11,33 +11,35 @@ void jack_bauer(void)
 {
 	int top, next;
 
-	for (next = 0; next < 60; next++)
+	for (top = 0; top < 24; top++)
 	{
-		if (top < 10 && next < 10)
+		for (next = 0; next < 60; next++)
 		{
-
-			_putchar('0');
-			_putchar(top);
-			_putchar(':');
-			_putchar('0');
-			_putchar(next);
-			/* printf("0%d:0%d\n", top, next); */
+			if (top < 10 && next < 10)
+			{
+				_putchar('0');
+				_putchar(top);
+				_putchar(':');
+				_putchar('0');
+				_putchar(next);
+				/* printf("0%d:0%d\n", top, next); */
+			}
+			if (top > 10 && next < 10)
+			{
+				_putchar(top + '0');
+				_putchar(':');
+				_putchar('0');
+				_putchar(next + '0');
+				/* printf("%d:0%d\n", top, next); */
+			}
+			if (top >= 10 && next >= 10)
+			{
+				_putchar(top + '0');
+				_putchar(':');
+				_putchar(next + '0');
+				/* printf("%d:%d\n", top, next); */
+			}
+			_putchar('\n');
 		}
-		if (top > 10 && next < 10)
-		{
-			_putchar(top + '0');
-			_putchar(':');
-			_putchar('0');
-			_putchar(next + '0');
-			/* printf("%d:0%d\n", top, next); */
-		}
-		if (top >= 10 && next >= 10)
-		{
-			_putchar(top + '0');
-			_putchar(':');
-			_putchar(next + '0');
-			/* printf("%d:%d\n", top, next); */
-		}
-		_putchar('\n');
 	}
 }
