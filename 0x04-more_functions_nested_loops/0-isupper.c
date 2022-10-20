@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * _isupper - start her
+ * @c: parameter is int c
+ *
+ * Return: returns 1 or 0
+ */
 int _isupper(int c)
 {
 	char str[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -11,6 +17,6 @@ int _isupper(int c)
 		{
 			return (1);
 		}
-		return (0);
 	}
+	return (0);
 }
