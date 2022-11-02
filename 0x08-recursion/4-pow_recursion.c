@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _pow_recursion - find power 
+ * _pow_recursion - find power
  * @x: int x
  * @y: power int
  *
