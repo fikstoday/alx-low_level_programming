@@ -10,12 +10,18 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, sum;
-
-	for (i = 0; i < argc; i++)
+	int i, product;
+	
+	if (argc <= 2 || argc > 3)
 	{
-		sum += atoi(agrv[i]);
+		printf("Error\n");
+		return (1);
 	}
-	printf("%d\n", sum);
+
+	for (i = 1; i < 3; i++)
+	{
+		product *= atoi(argv[i]);
+	}
+	printf("%d\n", product);
 	return (0);
 }
