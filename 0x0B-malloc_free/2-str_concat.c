@@ -13,7 +13,7 @@ int length(char *str)
 {
 	int len = 0, i = 0;
 
-	while (p[i] != '\0')
+	while (str[i] != '\0')
 	{
 		len = len + 1;
 		i++;
