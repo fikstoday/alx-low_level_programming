@@ -26,9 +26,10 @@ char *_strdup(char *str)
 	{
 		return (arrstr);
 	}
-	for (j = 0; j < sizeof(arrstr); j++)
+	for (j = 0; j < len; j++)
 	{
 		arrstr[j] = str[j];
 	}
+	arrstr[len + 1]  = '\0';
 	return (arrstr);
 }
