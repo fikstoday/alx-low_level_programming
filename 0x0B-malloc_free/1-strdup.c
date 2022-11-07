@@ -11,10 +11,11 @@
  */
 char *_strdup(char *str)
 {
-	int len, j;
+	int len;
+	unsigned int j;
 	char *arrstr = NULL;
 
-	if (size == 0)
+	if (str == NULL)
 	{
 		return (arrstr);
 	}
