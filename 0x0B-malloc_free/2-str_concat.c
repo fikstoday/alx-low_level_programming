@@ -3,6 +3,23 @@
 #include <stdio.h>
 
 /**
+ * length - string length
+ * @str: pointer to str
+ *
+ * Description: returns string length of pointer
+ * Return: number
+ */
+int length(char *str)
+{
+	int len = 0, i = 0;
+
+	while (p[i] != '\0')
+	{
+		len = len + 1;
+		i++;
+	}
+}
+/**
  * str_concat - concatentate one string to s1
  * @s1: pointer to char
  * @s2: pointer to char
@@ -12,14 +29,21 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int len, i;
+	size_t len1, len2, i, j;
+	char *tmp;
 
-	for (len = 0; s2[len] != '\0'; len++)
-	;
-	s1 = malloc(sizeof(char) * len);
-	for (i = 0; s2[i] != '\0'; i++)
+	size1 = length(s1);
+	size2 = length(s2);
+	tmp = malloc(sizeof(char) * (size1 + size2 + 1));
+	for (i = 0; s1[i] != '\0'; i++)
 	{
-		s1[len + i] = s2[i];
+		tmp[i] = s1[i];
 	}
-	return (s1);
+	j = i;
+	for (i = 0; s2[i] != '\0'; i++, j++)
+	{
+		tmp[j] = s2[i];
+	}
+	tmp[j] = '\0';
+	return (tmp);
 }
