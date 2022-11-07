@@ -18,6 +18,7 @@ int length(char *str)
 		len = len + 1;
 		i++;
 	}
+	return (len);
 }
 /**
  * str_concat - concatentate one string to s1
@@ -32,9 +33,9 @@ char *str_concat(char *s1, char *s2)
 	size_t len1, len2, i, j;
 	char *tmp;
 
-	size1 = length(s1);
-	size2 = length(s2);
-	tmp = malloc(sizeof(char) * (size1 + size2 + 1));
+	len1 = length(s1);
+	len2 = length(s2);
+	tmp = malloc(sizeof(char) * (len1 + len2 + 1));
 	for (i = 0; s1[i] != '\0'; i++)
 	{
 		tmp[i] = s1[i];
