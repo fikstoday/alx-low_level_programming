@@ -31,7 +31,7 @@ int _strlen(char *q)
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *p3;
-	int i, j, size1;
+	unsigned int i, j, size1;
 
 	size1 = _strlen(s1);
 	p3 = malloc(sizeof(char) * size1);
