@@ -31,10 +31,9 @@ int _strlen(char *q)
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *p3;
-	int i, j, size1, size2;
+	int i, j, size1;
 
 	size1 = _strlen(s1);
-	printf("%d\n", size1);
 	p3 = malloc(sizeof(char) * size1);
 	for (i = 0; i < size1; i++)
 	{
