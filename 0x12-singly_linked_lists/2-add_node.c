@@ -17,7 +17,7 @@ int length(char *str)
 	while (*str)
 	{
 		str++;
-		len++;
+		i++;
 	}
 	return (i);
 }
